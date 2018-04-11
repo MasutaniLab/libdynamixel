@@ -13,7 +13,7 @@
 namespace ssr {
   namespace dynamixel {
 
-    class DynamixelException : std::exception {
+    class DynamixelException : public std::exception {
     public:
       DynamixelException(void) {}
       virtual ~DynamixelException(void) throw() {}
